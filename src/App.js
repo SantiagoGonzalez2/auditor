@@ -1,10 +1,13 @@
 import { uploadFile } from './firebase/config';
 import { useState } from "react";
+
 import './App.css';
+
 
 function App() {
   const [file, setFile] = useState(null)
   const [file2, setFile2] = useState(null)
+
 
  
   const handleSubmit = async (e) => {
@@ -16,7 +19,6 @@ function App() {
     console.log(error)
    }
    
-    
   }
 
   return (

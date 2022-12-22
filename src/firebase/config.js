@@ -28,10 +28,13 @@ export  const storage = getStorage(app)
 
 export async function uploadFile(file,file1)  {
   
-    const storageRef = ref(storage,v4(),v4())
+    const storageRef = ref(storage,`${v4()}/${v4()}`)
     return await uploadBytes(storageRef,file,file1)
     
 }
+
+
+
 
 
 
