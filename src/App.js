@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import { uploadFile } from './firebase/config';
+import { useState } from "react";
 import './App.css';
 
 function App() {
+  const [file, setFile] = useState(null)
+  const [file2, setFile2] = useState(null)
+
+ 
+  const handleSubmit = async (e) => {
+   e.preventDefault()
+   try{
+    const result = await uploadFile(file)
+    console.log(result)
+   }catch(error){
+    console.log(error)
+   }
+   
+    
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <input type='file' name={file} onChange={e => setFile(e.target.files[0])}/>
+        <input type='file' name={file2} onChange={e => setFile2(e.target.files)[1]}/>
+       
+        
+        <button onClick={handleSubmit}>Enviar</button>
+        
+      </form>
+   
     </div>
   );
 }
