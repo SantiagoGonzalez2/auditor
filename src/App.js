@@ -9,12 +9,17 @@ function App() {
   const [file2, setFile2] = useState(null)
 
 
+
+
+
  
-  const handleSubmit = async (e) => {
+
+  const handleSubmit = async (e,) => {
    e.preventDefault()
    try{
-    const result = await uploadFile(file)
+    const result = await uploadFile(file, file2)
     console.log(result)
+
    }catch(error){
     console.log(error)
    }
@@ -25,7 +30,7 @@ function App() {
     <div className="App">
       <form>
         <input type='file' name={file} onChange={e => setFile(e.target.files[0])}/>
-        <input type='file' name={file2} onChange={e => setFile2(e.target.files)[0]}/>
+        <input type='file' name={file2} onChange={e => setFile2(e.target.files[0])}/>
        
         
         <button onClick={handleSubmit}>Enviar</button>

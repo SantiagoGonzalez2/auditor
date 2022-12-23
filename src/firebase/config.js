@@ -26,10 +26,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export  const storage = getStorage(app)
 
-export async function uploadFile(file,file1)  {
+export async function uploadFile(file, file2)  {
   
     const storageRef = ref(storage,`${v4()}/${v4()}`)
-    return await uploadBytes(storageRef,file,file1)
+    return await uploadBytes(storageRef,file, file2)
     
 }
 
