@@ -54,6 +54,9 @@ function App() {
       uploadDates()
       MySwal.fire({
         title: <p>Auditoria enviada!</p>,
+        margin:0
+        
+        
       
       }).then(() => {
         return MySwal.fire(<p>Gracias por trabajar con nosotros!</p>)
