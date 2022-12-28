@@ -1,0 +1,87 @@
+#conteiner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vh;
+    margin: auto;
+}
+#img1 {
+    
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#texto{
+    text-align: justify;
+    font-size: 24px;
+    margin-top: 20%;
+    
+}
+#button{
+    text-align: center;
+    margin-top: 150px;
+    background-color:#0066FF;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+#texto1{
+    text-align: justify;
+    font-size: 22px;
+    margin-bottom: 30vh;
+   
+    
+}
+#conteiner1{
+    margin-top: 50vh;
+}
+#contenedorimg{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#antena{
+    width: 50vh;
+    
+    
+}
+#modem{
+    width: 50vh;
+   
+}
+#texto2{
+    text-align: justify;
+    font-size: 22px;
+    margin-top:10%
+   
+    
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#antenaup{
+    margin-top: 40px;
+    height: 300px;
+}
+
+#toma1{
+    margin-top: 20px;
+}
+
+
+#despedida{
+    text-align: center;
+    margin-top: 15%;
+}
+
+#send {
+    width: 100px;
+    margin-top: 20px;
+}
