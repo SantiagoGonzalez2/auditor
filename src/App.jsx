@@ -98,7 +98,7 @@ function App() {
 
         <img src={antenatecho} id='antenaup' alt="antena" />
 
-        <input name={file} onChange={e => setFile(e.target.files[0])} type="file" id="toma1" capture="camera" />
+        <input name={file} onChange={e => setFile(e.target.files[0])} type="file" id="toma1"  />
 
 
 
