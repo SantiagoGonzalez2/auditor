@@ -92,7 +92,7 @@ function App() {
       <a id='button' href="#texto1">COMENZAR</a>
 
       <div id='conteiner1'>
-        <p id='texto2'>Ud cuenta actualmente con un servicio
+        <p id='texto1'>Ud cuenta actualmente con un servicio
 
           satelital compuesto por una estación remota
 
