@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91992e73.css",
+    "main.js": "/static/js/main.95e25356.js",
+    "static/js/787.02819794.chunk.js": "/static/js/787.02819794.chunk.js",
+    "static/media/img-modem.jpg": "/static/media/img-modem.61649051c5123ae13c07.jpg",
+    "static/media/img-antena.jpg": "/static/media/img-antena.dac0791d22f33a6a12e1.jpg",
+    "static/media/logo.png": "/static/media/logo.fa0291460ee32fdfffba.png",
+    "static/media/backmodem.jpg": "/static/media/backmodem.596e8fc87d7aba5bf939.jpg",
+    "static/media/equipo.jpg": "/static/media/equipo.15ffd4ac344873949ae3.jpg",
+    "static/media/modemin.jpg": "/static/media/modemin.f180e11240f1f691f9e8.jpg",
+    "index.html": "/index.html",
+    "main.91992e73.css.map": "/static/css/main.91992e73.css.map",
+    "main.95e25356.js.map": "/static/js/main.95e25356.js.map",
+    "787.02819794.chunk.js.map": "/static/js/787.02819794.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91992e73.css",
+    "static/js/main.95e25356.js"
+  ]
+}
