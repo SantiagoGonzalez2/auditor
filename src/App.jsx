@@ -10,6 +10,9 @@ import entrada from './imagenes/entrada.jpg'
 import modemin from './imagenes/modemin.jpg'
 import backmodem from './imagenes/backmodem.jpg'
 import './App.css';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
   const [file3, setFile3] = useState(null)
   const [file4, setFile4] = useState(null)
   const [dni, setDni] = useState(null)
+
+  const MySwal = withReactContent(Swal)
+
 
 
   const user = {
@@ -46,6 +52,13 @@ function App() {
       const result4 = await uploadFile4(file4)
       console.log(result4)
       uploadDates()
+      MySwal.fire({
+        title: <p>Auditoria enviada!</p>,
+      
+      }).then(() => {
+        return MySwal.fire(<p>Gracias por trabajar con nosotros!</p>)
+      })
+      
 
     } catch (error) {
       console.log(error)
