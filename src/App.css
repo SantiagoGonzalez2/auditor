@@ -87,11 +87,11 @@
 }
 
 @media (max-width: 550px) {
-    #conteiner{ width: 50vh;
+    #conteiner{ width: 30vh;
     }
 
     #img1{
-        width: 60vh;
+        width: 40vh;
     }
     #texto {
         font-size: 16px;
