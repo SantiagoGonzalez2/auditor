@@ -1,0 +1,15 @@
+#titleC {
+    text-align: center;
+    margin-top: 100px;
+}
+#img1 {
+    margin-top: 80px;
+   text-align: center;
+}
+
+@media (max-width: 550px) {
+    #img1{
+        width: 40vh;
+    }
+
+}
