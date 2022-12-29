@@ -59,9 +59,9 @@ function Form() {
       const result4 = await uploadFile4(file4)
       console.log(result4)
       uploadDates()
-      setTimeout(() => {
+      
         navigate('/confirmation')
-    }, 100)
+    
       
       
 
@@ -116,7 +116,7 @@ function Form() {
 
         <img src={antenatecho} id='antenaup' alt="antena" />
 
-        <input name={file} onChange={e => setFile(e.target.files[0])} type="file" id="toma1"  />
+        <input name={file} onChange={e => setFile(e.target.files[0])} type="file" id="toma1" accept="image/*" capture="camera"  />
 
 
 
