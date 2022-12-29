@@ -16,6 +16,9 @@ import { useNavigate } from "react-router-dom"
 
 
 
+
+
+
 function Form() {
   const [file, setFile] = useState(null)
   const [file1, setFile1] = useState(null)
@@ -24,6 +27,7 @@ function Form() {
   const [file4, setFile4] = useState(null)
   const [dni, setDni] = useState(null)
   const navigate = useNavigate()
+
 
 
 
@@ -47,16 +51,20 @@ function Form() {
     }
     else{
     
+     
     try {
-      const result = await uploadFile(file)
+     
+      
+                
+      const result =  uploadFile(file)
       console.log(result)
-      const result1 = await uploadFile1(file1)
+      const result1 =  uploadFile1(file1)
       console.log(result1)
-      const result2 = await uploadFile2(file2)
+      const result2 =  uploadFile2(file2)
       console.log(result2)
-      const result3 = await uploadFile3(file3)
+      const result3 =  uploadFile3(file3)
       console.log(result3)
-      const result4 = await uploadFile4(file4)
+      const result4 =  uploadFile4(file4)
       console.log(result4)
       uploadDates()
       
@@ -64,12 +72,13 @@ function Form() {
     
       
       
-
+      
     } catch (error) {
       console.log(error)
     }
 
   }}
+  
 
   return (
     <div id='conteiner'>
